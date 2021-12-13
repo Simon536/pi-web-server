@@ -1,1 +1,1 @@
-FROM php/php:apache
+FROM php:latest-apache
