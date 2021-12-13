@@ -1,1 +1,1 @@
-FROM php:apache
+FROM php/php:apache
