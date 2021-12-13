@@ -3,13 +3,8 @@ version: "3"
 services:
   webserver:
     container_name: webserver
-    image: php:apache-bullseye
+    build: build/.
+    image: custom-build
     ports:
       - "80:80/tcp"
-    volumes:
-      - web-directory:/var/www/html
     restart: unless-stopped
-
-volumes:
-  web-directory:
-    external: true
