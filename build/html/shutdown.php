@@ -12,7 +12,7 @@
         }
         else if(isset($_GET['restart'])){
             echo "Restarting in one minute...";
-            echo "Please close this tab and wait approximately 3 minutes for re$
+            echo "Please close this tab and wait approximately 3 minutes for restart to complete!";
             system('sudo /sbin/shutdown -r +1');
         }
     ?>
