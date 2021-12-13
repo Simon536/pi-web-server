@@ -4,7 +4,7 @@ services:
   webserver:
     container_name: webserver
     build: build/.
-    image: html-server:1.2
+    image: html-server:1.3
     ports:
       - "80:80/tcp"
     restart: unless-stopped
