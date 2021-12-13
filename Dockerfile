@@ -1,1 +1,1 @@
-FROM php:latest-apache
+FROM php:apache-bullseye
