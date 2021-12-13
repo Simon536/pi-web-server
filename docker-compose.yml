@@ -4,7 +4,6 @@ services:
   webserver:
     container_name: webserver
     build: build/.
-    image: custom-build
     ports:
       - "80:80/tcp"
     restart: unless-stopped
