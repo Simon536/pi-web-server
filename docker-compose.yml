@@ -7,5 +7,9 @@ services:
     ports:
       - "80:80/tcp"
     volumes:
-      - './html:/var/www'
+      - web-directory:/var/www/html
     restart: unless-stopped
+
+volumes:
+  web-directory:
+    external: true
