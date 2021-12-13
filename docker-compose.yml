@@ -6,4 +6,6 @@ services:
     image: php:apache-bullseye
     ports:
       - "80:80/tcp"
+    volumes:
+      - './var-www-html:/var/www/html'
     restart: unless-stopped
