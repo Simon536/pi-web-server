@@ -4,3 +4,6 @@ services:
   webserver:
     container_name: webserver
     image: php:apache-bullseye
+    ports:
+      - "80:80/tcp"
+    restart: unless-stopped
