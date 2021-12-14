@@ -15,6 +15,10 @@
             echo "Please close this tab and wait for restart to complete!";
             system('sudo /sbin/shutdown -r +1');
         }
+        else if(isset($_GET['cancel'])){
+            echo "Shutdown cancelled!";
+            system('sudo /sbin/shutdown -c');
+        }
     ?>
   </body>
 </html>
