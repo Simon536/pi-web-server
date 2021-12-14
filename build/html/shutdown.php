@@ -19,6 +19,7 @@
         }
         else if(isset($_GET['cancel'])){
             echo "Shutdown cancelled!";
+            echo "<a href=\"/index.php\">Return to Home</a>";
             system('sudo /sbin/shutdown -c');
         }
     ?>
