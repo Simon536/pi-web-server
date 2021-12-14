@@ -10,4 +10,5 @@ services:
     volumes:
       - /bin/systemctl:/bin/systemctl
       - /run/systemd/system:/run/systemd/system
+      - /var/run/dbus/system_bus_socket:/var/run/dbus/system_bus_socket
     restart: unless-stopped
