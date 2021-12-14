@@ -57,6 +57,8 @@
             require 'vendor/autoload.php';
             $httpClient = new \GuzzleHttp\Client();
 
+            libxml_use_internal_errors(true);
+        
             $response = $httpClient->get('https://www.espncricinfo.com/live-cricket-score');
             $htmlString = (string) $response->getBody();
             $doc = new DOMDocument();
