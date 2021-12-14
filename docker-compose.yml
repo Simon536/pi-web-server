@@ -4,7 +4,7 @@ services:
   webserver:
     container_name: webserver
     build: build/.
-    image: html-server:1.7
+    image: html-server:1.8
     ports:
       - "80:80/tcp"
     volumes:
