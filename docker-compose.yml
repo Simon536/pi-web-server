@@ -7,8 +7,6 @@ services:
     image: html-server:1.16
     ports:
       - "80:80/tcp"
-    dns:
-      - 192.168.0.100
     volumes:
       - /bin/systemctl:/bin/systemctl
       - /run/systemd/system:/run/systemd/system
