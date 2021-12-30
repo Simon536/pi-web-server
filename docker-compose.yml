@@ -3,7 +3,9 @@ version: "3"
 services:
   webserver:
     container_name: webserver
-    build: build/.
+    build:
+      context: ./build
+      dockerfile: Dockerfile
     image: html-server:1.18
     ports:
       - "80:80/tcp"
