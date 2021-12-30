@@ -6,4 +6,4 @@ RUN apt update
 # RUN apt install -y sudo
 # RUN usermod -aG sudo www-data
 # RUN echo '%sudo ALL=(ALL) NOPASSWD:/sbin/shutdown' >> /etc/sudoers
-RUN composer install
+# RUN composer install
