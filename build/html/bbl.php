@@ -64,8 +64,8 @@
             $doc = new DOMDocument();
             $doc->loadHTML($htmlString);
             $xpath = new DOMXPath($doc);
-            $live_scores = $xpath->evaluate('//div[@class="match-info match-info-FIXTURES"]');
-            //$live_scores = $xpath->evaluate('//div[@class="match-score-block"]/div[2]');
+            //$live_scores = $xpath->evaluate('//div[@class="match-info match-info-FIXTURES"]');
+            $live_scores = $xpath->evaluate('//div[@class="match-score-block"]/div[2]');
             echo "<table>";
             echo "<td>";
             $score_html = $doc->saveHTML($live_scores->item(0));
