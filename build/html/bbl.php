@@ -69,8 +69,8 @@
             echo "<table>";
             echo "<td>";
             $score_html = $doc->saveHTML($live_scores->item(0));
-            $score_html = preg_replace('/<img [^<]*/', '', $score_html);
-            $score_html = preg_replace('/ href=".*"/', '', $score_html);
+            //$score_html = preg_replace('/<img [^<]*/', '', $score_html);
+            //$score_html = preg_replace('/ href=".*"/', '', $score_html);
             echo $score_html;
             echo "</td>";
             echo "<td>";
