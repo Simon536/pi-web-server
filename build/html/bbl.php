@@ -55,7 +55,7 @@
 
         <?php
             require 'vendor/autoload.php';
-            $httpClient = new \GuzzleHttp\Client();
+            $httpClient = new \GuzzleHttp\Client(['headers' => ['Referer' => 'https://duckduckgo.com/', 'User-Agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:95.0) Gecko/20100101 Firefox/95.0']]);
 
             libxml_use_internal_errors(true);
         
