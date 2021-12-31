@@ -68,7 +68,7 @@
             echo "<table>";
             echo "<td>";
             $score_html = $doc->saveHTML($live_scores->item(0));
-            $score_html = preg_replace('/<img [^<]*/', '', $score_html);
+            $score_html = preg_replace('/<img [^<]*/', '', $score_html);   // Test regex expressions using https://www.phpliveregex.com
             $score_html = preg_replace('/ href=".*"/U', '', $score_html);  // U modifier ensures non-greedy matching
             echo $score_html;
             echo "</td>";
