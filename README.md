@@ -6,7 +6,7 @@ This repository is intended to be deployed using Portainer into a Docker environ
 
 *Note: when making changes to the website content, remember to increment the image tag in docker-compose.yml. Otherwise Portainer will use the cached version of the image.*
 
-**Tested on Portainer 2.11.0**
+**Tested on Portainer 2.11.0 and Docker 20.10.12**
 
 ## Features
 
