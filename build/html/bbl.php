@@ -59,33 +59,33 @@
 
             libxml_use_internal_errors(true);
         
-            //$response = $httpClient->get('https://www.espncricinfo.com/live-cricket-score');
-            //$htmlString = (string) $response->getBody();
-            //$doc = new DOMDocument();
-            //$doc->loadHTML($htmlString);
-            //$xpath = new DOMXPath($doc);
-            //$live_scores = $xpath->evaluate('//div[@class="match-info match-info-FIXTURES"]');
-            //$live_scores = $xpath->evaluate('//div[@class="match-score-block"]/div[2]');
-            //echo "<table>";
-            //echo "<td>";
-            //$score_html = $doc->saveHTML($live_scores->item(0));
-            //$score_html = preg_replace('/<img [^<]*/', '', $score_html);
-            //$score_html = preg_replace('/ href=".*"/', '', $score_html);
-            //echo $score_html;
-            //echo "</td>";
-            //echo "<td>";
-            //$score_html = $doc->saveHTML($live_scores->item(1));
-            //$score_html = preg_replace('/<img [^<]*/', '', $score_html);
-            //$score_html = preg_replace('/ href=".*"/', '', $score_html);
-            //echo $score_html;
-            //echo "</td>";
-            //echo "<td>";
-            //$score_html = $doc->saveHTML($live_scores->item(2));
-            //$score_html = preg_replace('/<img [^<]*/', '', $score_html);
-            //$score_html = preg_replace('/ href=".*"/', '', $score_html);
-            //echo $score_html;
-            //echo "</td>";
-            //echo "</table>";
+            $response = $httpClient->get('https://www.espncricinfo.com/live-cricket-score');
+            $htmlString = (string) $response->getBody();
+            $doc = new DOMDocument();
+            $doc->loadHTML($htmlString);
+            $xpath = new DOMXPath($doc);
+            $live_scores = $xpath->evaluate('//div[@class="match-info match-info-FIXTURES"]');
+            $live_scores = $xpath->evaluate('//div[@class="match-score-block"]/div[2]');
+            echo "<table>";
+            echo "<td>";
+            $score_html = $doc->saveHTML($live_scores->item(0));
+            $score_html = preg_replace('/<img [^<]*/', '', $score_html);
+            $score_html = preg_replace('/ href=".*"/', '', $score_html);
+            echo $score_html;
+            echo "</td>";
+            echo "<td>";
+            $score_html = $doc->saveHTML($live_scores->item(1));
+            $score_html = preg_replace('/<img [^<]*/', '', $score_html);
+            $score_html = preg_replace('/ href=".*"/', '', $score_html);
+            echo $score_html;
+            echo "</td>";
+            echo "<td>";
+            $score_html = $doc->saveHTML($live_scores->item(2));
+            $score_html = preg_replace('/<img [^<]*/', '', $score_html);
+            $score_html = preg_replace('/ href=".*"/', '', $score_html);
+            echo $score_html;
+            echo "</td>";
+            echo "</table>";
         ?>
 
         <h1> BBL Stats 2021/2022 </h1>
