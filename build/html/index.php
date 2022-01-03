@@ -14,6 +14,6 @@
         echo $_SERVER['REMOTE_ADDR'];
     ?>
     <p>
-    <a href="//<?php print $_SERVER{'SERVER_NAME'}; ?>:8081">Big Bash Stats</a>
+    <a href="//<?php print $_SERVER['SERVER_NAME']; ?>:8081">Big Bash Stats</a>
   </body>
 </html>
