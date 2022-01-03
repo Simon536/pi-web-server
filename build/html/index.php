@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Backup Server Control Panel</title>
+    <title>Raspberry Pi Server Control Panel</title>
   </head>
   <body>
     <form method="get" action="shutdown.php">
@@ -14,9 +14,6 @@
         echo $_SERVER['REMOTE_ADDR'];
     ?>
     <p>
-    <form action="bbl.php">
-        <input type="submit" value="Big Bash League 11 Stats">
-    </form>
+    <a href="//<?php print $_SERVER{'SERVER_NAME'}; ?>:8081">Big Bash Stats</a>
   </body>
 </html>
-
