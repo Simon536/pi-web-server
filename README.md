@@ -12,5 +12,4 @@ This repository is intended to be deployed using Portainer into a Docker environ
 
 - Able to shutdown and restart the Pi hardware from a simple web interface
 - Able to cancel a shutdown or restart if it is initiated by accident
-- Live cricket scores
-- Live leaderboard and stats for the Australian BBL
+- Display the client IP address

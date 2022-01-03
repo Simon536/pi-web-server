@@ -6,7 +6,7 @@ services:
     build:
       context: ./build
       dockerfile: Dockerfile
-    image: html-server:1.30
+    image: html-server:1.31
     ports:
       - "80:80/tcp"
     volumes:
